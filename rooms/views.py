@@ -9,5 +9,5 @@ class RoomListAPIView(generics.ListAPIView):
 
 class RoomRetrieveAPIView(generics.RetrieveAPIView):
     lookup_field = "id"
-    quertyset = Room.objects.all()
+    queryset = Room.objects.all()
     serializer_class = RoomDetailSerializer
