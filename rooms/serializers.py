@@ -9,3 +9,13 @@ class RoomListSerializer(serializers.ModelSerializer):
             'room_name',
             'description',
         ]
+class RoomDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Room
+        fields = [
+            'id',
+            'room_name',
+            'description',
+            'width',
+            'length',
+        ]
