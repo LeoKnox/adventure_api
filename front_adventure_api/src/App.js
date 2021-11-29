@@ -1,4 +1,6 @@
+import React from 'react';
 import logo from './logo.svg';
+import RoomList from './rooms/roomslist';
 import './App.css';
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <RoomList/>
       </header>
     </div>
   );
