@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import TestData from './test_data.json';
+import RoomDetail from './roomdetail';
 
 class RoomList extends Component {
     render() {
         return(
-            <h5>Room gets printed here</h5>
+            <div>
+                {TestData.map( item => {
+                    return <RoomDetail r = {item} />
+                    })
+                }
+            </div>
         )
     }
 }
