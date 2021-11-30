@@ -20,7 +20,7 @@ class RoomList extends Component {
         return(
             <div>
                 {this.state.roomsData.map( item => {
-                    return <h3>{item.room_name}: {item.description}</h3>
+                    return <h3 key={item.id}>{item.room_name}: {item.description}</h3>
                     })
                 }
             </div>
