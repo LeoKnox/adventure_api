@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 
 class RoomDetail extends Component {
     render() {
-    const r = this.props.r
-        return(
-            <div>
-                <h4>{r.id}</h4>
-                <h4>{r.room_name}</h4>
-                <h4>{r.description}</h4>
+        const obj = this.props.roomDetail;
+        return (
+            <div style={{ color: "yellow", border: "1px solid yellow" }}>
+                <h4>{obj.room_name}</h4>
+                <p>{obj.description}</p>
             </div>
-        )
+        );
     }
 }
 export default RoomDetail;
