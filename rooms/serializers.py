@@ -3,6 +3,7 @@ from .models import Room
 from rest_framework.reverse import reverse
 
 class RoomListSerializer(serializers.ModelSerializer):
+    absolute = serializers.SerializerMethodField()
     class Meta:
         model = Room
         fields = [
