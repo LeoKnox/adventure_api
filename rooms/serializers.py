@@ -11,6 +11,7 @@ class RoomListSerializer(serializers.ModelSerializer):
             'id',
             'room_name',
             'description',
+            'active',
             'absolute',
         ]
 
