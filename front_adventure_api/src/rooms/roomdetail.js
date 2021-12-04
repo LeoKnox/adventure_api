@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import RoomUpdate from './roomupdate';
 
 class RoomDetail extends Component {
     constructor(props) {

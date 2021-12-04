@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class RoomForm extends React.Component {
+class RoomUpdate extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -51,4 +51,4 @@ class RoomForm extends React.Component {
     }
 }
 
-export default RoomForm;
+export default RoomUpdate;
