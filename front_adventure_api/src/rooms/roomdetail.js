@@ -25,6 +25,11 @@ class RoomDetail extends Component {
                 >
                     Update
                 </button>
+                <button
+                    style={{ backgroundColor: "white" }}
+                    onClick={() => this.deleteRoom(obj.delete)}>
+                    Delete
+                </button>
                 {this.state.showComponent ? <RoomUpdate roomUpdate={obj} />: null}
             </div>
         );
