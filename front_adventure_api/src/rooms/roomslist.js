@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import RoomDetail from './roomdetail';
-import RoomUpdate from './roomupdate';
 import axios from 'axios';
 
 class RoomList extends Component {
