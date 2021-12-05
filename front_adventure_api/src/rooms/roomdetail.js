@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import RoomUpdate from './roomupdate';
+import axios from "axios";
 
 class RoomDetail extends Component {
     constructor(props) {
@@ -8,9 +9,20 @@ class RoomDetail extends Component {
             showComponent: false,
         };
         this.updateRoomDetails = this.updateRoomDetails.bind(this);
+        this.deleteRoom = this.deleteRoom.bind(this);
     }
     updateRoomDetails() {
         this.setState({ showComponent: true });
+    }
+    deleteRoom(obj) {
+        console.log(obj);
+        axios.delete("http://127.0.0.1:8000".concat(obj))
+            .then((response) => {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
     }
     render() {
         const obj = this.props.roomDetail;
