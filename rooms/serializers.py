@@ -29,7 +29,11 @@ class RoomDetailSerializer(serializers.ModelSerializer):
             'width',
             'length',
             'update',
+            'delete',
         ]
 
     def get_update(self, obj):
         return reverse('room_update', args=(obj.pk,))
+    
+    def get_delete(self, obj):
+        return reverse('room_delete', args=(obj.pk,))
