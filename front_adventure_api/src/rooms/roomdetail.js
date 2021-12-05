@@ -38,7 +38,7 @@ class RoomDetail extends Component {
                     Update
                 </button>
                 <button
-                    style={{ backgroundColor: "white" }}
+                    style={{ backgroundColor: "red" }}
                     onClick={() => this.deleteRoom(obj.delete)}>
                     Delete
                 </button>
