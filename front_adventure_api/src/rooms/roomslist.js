@@ -3,8 +3,6 @@ import RoomDetail from './roomdetail';
 import axios from 'axios';
 
 class RoomList extends Component {
-    REACT_APP_URL = "http://127.0.0.1:8000";
-    
     constructor(props) {
         super(props);
         this.state = {
