@@ -18,6 +18,7 @@ class RoomDetail extends Component {
             <div style={{ color: "yellow", border: "1px solid yellow" }}>
                 <h4>{obj.room_name}</h4>
                 <p>{obj.description}</p>
+                <p><label>Length:</label>{obj.length} x <label>Width:</label>{obj.width}</p>
                 <button
                     style={{ backgroundColor: "white" }}
                     onClick={() => this.updateRoomDetails()}
