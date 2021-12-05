@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class RoomUpdate extends React.Component {
+class RoomUpdate extends Component {
     constructor(props) {
         super(props);
         this.state = {
