@@ -33,8 +33,8 @@ class RoomList extends Component {
 
     componentDidMount(){
         axios
-            .get("http://127.0.0.1:8000/")
-            //.get(process.env.REACT_APP_URL)
+            //.get("http://127.0.0.1:8000/")
+            .get(process.env.REACT_APP_URL)
             .then((response) => {
                 this.setState({roomsData: response.data})
             })
