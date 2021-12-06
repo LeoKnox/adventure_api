@@ -83,7 +83,7 @@ class RoomForm extends Component {
                 </div>
                 <input type="submit" value="Submit" />
             </form>
-        )
+        );
     }
 }
 
