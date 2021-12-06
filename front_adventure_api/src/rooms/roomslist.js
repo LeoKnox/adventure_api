@@ -47,17 +47,7 @@ class RoomList extends Component {
     render() {
         return(
             <div>
-                {this.state.roomsData.map((item) => {
-                    return (
-                        <h3 key={item.id} onClick={() => this.showRoomDetails(item)}>
-                            {item.room_name}: {item.description}
-                        </h3>
-                    );
-                })}
-
-                {this.state.showComponent ? (
-                    <RoomDetail roomDetail={this.state.room} />
-                ) : null}
+                <RoomForm />
             </div>
         );
     }
