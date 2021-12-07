@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import RoomList from './rooms/roomslist';
-import RoomForm from './rooms/roomform';
 import './App.css';
 
 function App() {
@@ -13,9 +12,8 @@ function App() {
           Create Adventures using Python API
         </p>
         <div>
-          <RoomForm/>
+          <RoomList/>
         </div>
-        <RoomList/>
       </header>
     </div>
   );

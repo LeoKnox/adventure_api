@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class RoomForm extends Component {
+class RoomForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -25,8 +25,8 @@ class RoomForm extends Component {
             .post("http://127.0.0.1:8000/create/", {
                 room_name: this.state.room_name,
                 description: this.state.description,
-                width: this.state.width,
                 length: this.state.length,
+                width: this.state.width,
             })
             .then((response) =>{
                 console.log(response);
@@ -57,7 +57,7 @@ class RoomForm extends Component {
                 <div>
                     Description:
                     <input
-                        type="textarea"
+                        type="text"
                         name="description"
                         value={description}
                         onChange={this.handleChange}
