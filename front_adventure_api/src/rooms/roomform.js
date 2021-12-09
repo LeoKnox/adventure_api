@@ -29,7 +29,7 @@ class RoomForm extends React.Component {
                 width: this.state.width,
             })
             .then((response) =>{
-                console.log(response);
+                console.log("ttt " + JSON.stringify(response));
             })
             .catch(function (error) {
                 console.log(error);
