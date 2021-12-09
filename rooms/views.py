@@ -13,8 +13,8 @@ class RoomRetrieveAPIView(generics.RetrieveAPIView):
     serializer_class = RoomDetailSerializer
 
 class RoomCreateAPIView(generics.CreateAPIView):
-    print("Create")
-    quertyset = Room.objects.all()
+    queryset = Room.objects.all()
+    print(queryset)
     serializer_class = RoomDetailSerializer
 
 class RoomRetrieveUpdateAPIView(generics.RetrieveUpdateAPIView):
